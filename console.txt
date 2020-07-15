@@ -1,0 +1,52 @@
+console.log()
+
+--> console.assert():
+   //console.assert() only logs if the first item passed in is false, otherwise, it doesn’t log anything.
+       EX: console.assert(user.name === > "John", user); 
+           Assertion failed: {name:"John Doe", age:15}
+
+
+--> console.table():
+     //Using console.log is great when you have strings, integers, or other primitives.
+       It starts to be less helpful when what you are trying to log is an object or an array or even an array of objects.
+       Instead of simply logging the data, it will put the data in a table, which is typically easier to read.
+       
+       For example, if you had an array of user data, you could log it like this:
+                  
+                  console.table(userlist)
+
+
+When you start having junky and slow performance, 
+one of the most important things to do is to determine where your performance bottlenecks are.
+
+--> console.time(): 
+    // Start a timer with "console.time()"
+
+--> console.timeLog():          
+    //Log its current value at any point in our code using "console.timeLog()"
+            
+--> console.timeEnd():
+    //Stop the timer and logging its final state using "console.timeEnd()"       
+
+
+--> cosole.count() 
+Sometimes all you need is to keep a counter variable, 
+to do that with just console.log would necessitate keeping track of the count in a global variable which is not an ideal solution.  
+we have console.count to do this for us and Each time you call console.count it will give the running total
+
+--> console.countReset()
+The count will reset on either a page refresh or by calling "console.countReset."    
+
+--> console.warn() – Print Warning Message To The Console
+warning() function is used to print warning messages to the console output. 
+The difference with the log() function that the log level is warning which will provide some warning symbol.
+
+--> console.info() – Print Informational Message To The Console
+
+--> console.error() – Print Error Message To The Console
+     While running JavaScript code on the browser DOM there will be some stack about running JavaScript code. 
+     We can print this stack to the console output with the trace() function for the currently executed code.
+
+--> 
+
+
